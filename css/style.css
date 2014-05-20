@@ -60,16 +60,27 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 					
 					
 		/*interior*/
-		#menuint {margin: 20px 0 0 0; width: 230px; background:white; height:400px; border-radius:14px; border: #CCCCCC solid 1px; float:left;}
-		#menuint h3 {font-size:20px; color:red; padding:15px;}
-		#menuint ul {list-style:none; padding:15px;}
-		#menuint li {}
-		#menuintheader {}
+		#menuint {margin: 30px auto; width: 230px; background:white; border-radius:14px; border: #CCCCCC solid 1px; float:left;}
+		#menuint h3 {font-size:20px; color:red; padding:10px 15px;}
+		#menuint .titulo {font-size:16px; color:red; padding:15px 0 5px;}
+		#menuint ul {list-style:none; padding:0 15px 40px;}
+		#menuint li {font-size:14px; margin:2px 0;}
+		#menuint a {text-decoration:none; color:#808080;}
+		#menuint a:hover {color:#009000;}
+		#menuint img {margin: 20px 100px 0;}
+		#menuintheader {} 
 		#menuintbody {}
 		#menuintfooter {}
 		
-		#contproductos { margin: 20px 0px 0px 20px; padding: 0 10px; width: 696px; height:400px; float: left; background:white;  border-radius:14px; border: #CCCCCC solid 1px;}
+		#portadaproductos { margin: 30px 0px 0px 20px;width: 696px; height:auto; float: left; background:white;  border-radius:14px; border: #CCCCCC solid 1px;}
+		#portadaproductos h2 {font-size:30px; color:red; padding:0 20px;}
+		#portadaproductos img {padding: 20px 0 20px;}
+		#portadaproductos p {padding: 0 20px 30px; text-align:justify; font-size:0.9em;}
+		
+		#contproductos { margin: 30px 0px 0px 20px;width: 696px; height:auto; float: left; background:white;  border-radius:14px; border: #CCCCCC solid 1px;}
 		#contproductos h2 {padding:10px; color:red;}
+		#contproductos h4 {padding:0 20px 8px;}
+		
 		
 		
 					
@@ -116,7 +127,8 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 				
 	 /* contenido paginas de producto*/
     h3.subinfo {color:red; font-size: 1.0em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 5px 3px;}
-		.colbod {float: left; width:50%; font-size: 0.75em; }		.colbod h2 {color:red; font-size: 1.7em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 0 3px;}
+		.colbod {float: left; width:50%; font-size: 0.75em; }
+		.colbod h2 {color:red; font-size: 1.7em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 0 3px;}
 		.colbod ul {}
 		.colbod ul li {background: url(../img/iconlista.png) 0 3px no-repeat; list-style-type: none; padding: 0 0 5px 15px;}
       img.imginfo {float: right; padding-top: -10px;}
