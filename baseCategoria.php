@@ -53,13 +53,21 @@
 
 			<!-- Menu lateral izquierdo -->
 			<div id="menuint">
+				<img src="slider/bp.png"/>
 				<h3>BP</h3>
-				<ul>
-					<li>Producto 1</li>
-					<li>Producto 2</li>
-					<li>Producto 3</li>
-					<li>Producto 4</li>
-				</ul>
+						<ul>
+				<?php 
+					include "conexion.php";
+					$re=mysql_query("select * from tblcategoriaproducto") or die (mysql_error());
+					while ($f=mysql_fetch_array($re)) {
+					?>
+						<!-- FALTA POR ACTUALIZAR DINAMICAMENTE EL MENU DE LA IZQUIERDA AQUI!!! -->
+							<li><a href ="bpcategoria.php/"><?php echo $f['catProductoNombre']; ?></a></li>
+						
+				<?php
+					}
+				?>
+						</ul>
 			</div>
 
 			<!-- Contenido en la parte derecha -->

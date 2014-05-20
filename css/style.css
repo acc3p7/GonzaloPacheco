@@ -36,13 +36,13 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 		#contenedor #contenido #slide {margin: 0 auto 15px; width:970px; height: 260px; border-bottom:1px solid #E8E8E8;}
 		#contenedor #contenido #columnas{margin: 0 auto; width: 970px; }
 		
-			#contenedor #contenido #columnas .colizq {float: left; width:50%; font-size: 0.75em; }
+			#contenedor #contenido #columnas .colizq {margin:0 13px 0;background: #fff; border:1px solid #CCCCCC; border-radius:10px; float: left; width:45%; font-size: 0.75em; }
 					#contenedor #contenido #columnas .colizq h2 {color:red; font-size: 1.7em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 0 3px;}
 					#contenedor #contenido #columnas .colizq ul {}
 					#contenedor #contenido #columnas .colizq ul li {background: url(../img/iconlista.png) 0 3px no-repeat; list-style-type: none; padding: 0 0 5px 15px;}
-					#contenedor #contenido #columnas #colheader {background: url(../img/colheder1.png) top left; height:21px;}
-					#contenedor #contenido #columnas #colbody { background: url(../img/colbody1.png);padding: 1px 20px;}
-					#contenedor #contenido #columnas #colfooter { background: url(../imgcontproductos/colfoter1.png); height:18px;}
+					#contenedor #contenido #columnas #colheader {height:21px;}
+					#contenedor #contenido #columnas #colbody {padding: 1px 20px;}
+					#contenedor #contenido #columnas #colfooter {height:18px;}
 					
 			#contenedor #contenido #columnas .colder{float: right; width:50%; font-size: 0.75em;}
 					#contenedor #contenido #columnas .colder h2 {color:red; padding:22px 20px 7px; font-size: 1.7em;}
@@ -82,18 +82,17 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 		#contproductos h4 {padding:0 20px 8px;}
 		
 		
-		
 					
 						
 		
 		/*footer de la pagina*/
 		
-				#contenedor #contenido #footer #direccion{margin:0 0 0 20px; float:left; font-family: Century Gothic; font-size: 0.5em; width: 485px; margin-right:20px;}
+				#contenedor #contenido #footer #direccion{margin:7px 15px; float:left; font-family: Century Gothic; font-size: 0.5em; width: 485px;}
 					#contenedor #contenido #footer #direccion a {color:red; text-decoration: none;  font-weight:bold; }
 					#contenedor #contenido #footer #direccion a:hover {color:#333; text-decoration: none;  font-weight:bold; }
 					#contenedor #contenido #footer #direccion address { font-style:normal;}
-				#contenedor #contenido #footer #logocic{float:left; margin:0 40px;}
-					#contenedor #contenido #footer #logocic img:hover{filter: alpha(opacity=75); opacity: .75;}
+				#contenedor #contenido #footer #logogp{float:left; margin:0 40px;}
+					#contenedor #contenido #footer #logogp img:hover{filter: alpha(opacity=75); opacity: .75;}
 				#contenedor #contenido #footer #social{float:right; margin:5px 15px 0 0; font-family: Century Gothic; font-size: 0.5em; font-weight:bold;}
 					#contenedor #contenido #footer #social dt { margin:0 auto;}
 					#contenedor #contenido #footer #social dl { margin:0 auto;}
@@ -104,8 +103,8 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 
 		/*slider de la pagina*/
 				
-		h3 {margin: 0; padding: 7px 0 0 0; font-size: 16px; text-transform: uppercase;}
-		#content {width: 900px; margin: 30px auto; padding: 20px; background: #FFF;	border: 1px solid #CCC;}
+		h3 {margin: 0; padding: 7px 0 0 0; font-size: 16px;}
+		#content {border-radius:10px; width: 900px; margin: 30px auto; padding: 20px; background: #FFF;	border: 1px solid #CCC;}
 			div#feature_list {width: 900px; height: 240px; overflow: hidden; position: relative;}
 			div#feature_list ul {position: absolute;top: 0;list-style: none;padding: 0;margin: 0;}
 				ul#tabs {left: 0;z-index: 2;width: 320px;}
@@ -126,14 +125,27 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 				
 				
 	 /* contenido paginas de producto*/
-    h3.subinfo {color:red; font-size: 1.0em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 5px 3px;}
-		.colbod {float: left; width:50%; font-size: 0.75em; }
+    h3.subinfo {color:red; font-size: 1.0em;border-bottom:1px solid #E8E8E8; width: 340px; padding: 0 0px 5px; margin:0 20px;}
+    h3.subinfo #colbod {color:red; font-size: 1.0em;border-bottom:1px solid #E8E8E8; padding: 0px 20px 3px;}
+		.colbod {float: left; width:100%; font-size: 0.75em; }
 		.colbod h2 {color:red; font-size: 1.7em;border-bottom:1px solid #E8E8E8; margin: -5px 0 10px; padding: 7px 0 3px;}
-		.colbod ul {}
-		.colbod ul li {background: url(../img/iconlista.png) 0 3px no-repeat; list-style-type: none; padding: 0 0 5px 15px;}
-      img.imginfo {float: right; padding-top: -10px;}
-      p.textoinfo { width:100%; font-size: 0.90em; }
+		.colbod ul {padding:5px 20px 25px;}
+		.colbod ul li {background: url(../img/iconlista.png) 0 3px no-repeat; list-style-type: none; padding: 0 0 5px 20px;}
+      .colbod img.imginfo {float: right; margin: 0 60px 25px;}
+      p.textoinfo {padding:0 20px 10px; font-size: 0.90em; }
+      #contproductos h2.titulinfo {color:red; font-size: 1.7em; padding: 20px 20px 10px;}
+	  iframe {padding:10px;}
 				
+				
+	/*mapa web*/
+		#nivel1 {margin: 30px 0 10px; width: 100%; height:40px; background:white; border-radius:14px; border: #CCCCCC solid 1px; float:right;}
+		#nivel1 p {padding: 9px 10px;}
+		
+		#nivel2 {margin: 10px auto; width: 95%; height:40px; background:white; border-radius:14px; border: #CCCCCC solid 1px; float:right;}
+		#nivel2 p {padding: 9px 10px;}
+	
+		#nivel3 {margin: 10px auto; width: 90%; height:40px; background:white; border-radius:14px; border: #CCCCCC solid 1px; float:right;}
+		#nivel3 p {padding: 9px 10px;}
 				
 				
 
