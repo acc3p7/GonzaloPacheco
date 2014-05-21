@@ -69,7 +69,7 @@
 		<link rel="stylesheet" href="slider.css" />
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript" src="js/prueba.js"></script>
+		<!--<script type="text/javascript" src="js/prueba.js"></script>-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.featureList-1.0.0.js"></script>
 		<script language="javascript">$(document).ready(function() {$.featureList($("#tabs li a"),$("#output li"), {start_item	:	1});});</script>
