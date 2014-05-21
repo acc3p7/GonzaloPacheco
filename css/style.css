@@ -79,8 +79,9 @@ body{font-size: 0.8/1em; font-family: "trebuchet ms", verdana; color: #808080; b
 		
 		#contproductos { margin: 30px 0px 0px 20px;width: 696px; height:auto; float: left; background:white;  border-radius:14px; border: #CCCCCC solid 1px;}
 		#contproductos h2 {padding:10px; color:red;}
+		#contproductos .producto h2 {font-size: 20px;}
 		#contproductos h4 {padding:0 20px 8px;}
-		
+		#contproductos .producto {float:left; width:50%;}
 		
 					
 						

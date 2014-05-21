@@ -65,30 +65,25 @@
 			<!-- Contenido en la parte izquierda -->
 			<div id="contproductos">
 				<!-- Título del producto -->
-				<h2>BP Visco 7000 SAE 0w-40</h2>
-				<img src="img/BP img/SAE040.png" width="143" height="252" alt="" class="imginfo" />
-				<!-- Descripción del producto -->
-				<p class="textoinfo">BP Visco 7000 0W-40 es un lubricante 100% sintético Extra Premium formulado con la tecnología de protección del motor CleanGuardTM para motores gasolina y diésel, incluidos los turboalimentados. Visco 7000 0W-40 esta especialmente diseñado para motores BMW, Porsche, VW y Mercedes, incluidos los equipados con filtros de partículas.</p>
-				<p>
-				</br>
-				<!-- Ventajas del producto -->
-				<h3 class="subinfo">Principales Ventajas:</h3>
-				<div class="colbod">
-					<div id="colheader">
-					</div>
-					<div id="colbody">
-						<ul>
-							<li>Excepcional limpieza del motor</li>
-							<li>Sobresaliente protección frente condiciones extremas</li>
-							<li>Prolonga la vida de los modernos sistemas de escape</li>
-							<li>Reduce las emisiones dañinas al medio ambiente</li>
-							<li>Mejora la economía de combustible</li>
-						</ul>
-					</div>
-					<div id="colfooter">
-					</div>
+				<?php
+					include "conexion.php";
+					$re=mysql_query("select * from tblproducto") or die (mysql_error());
+					while ($f=mysql_fetch_array($re)) {
+						?>
+						<div class="producto">
+							<center>
+								<h2><?php echo $f['productoNombre'];?></h2>
+								<img src="productos/thumbnail/<?php echo $f['productoThumb'];?>" width="72" height="126" alt="" class="imginfo" /><br>
+								<span>Precio: <?php echo $f['productoPrecio'];?></span>
+								<a href="detalles.php?id=<?php echo $f['productoID'];?>">Ver</a>
+							</center>
+						</div>
+						<?php
+					}
+				?>
 				
-				</div>	
+				<p>
+					</br>
 				</p>
 			</div>
 			
