@@ -67,7 +67,7 @@
 		<title >Gonzalo Pacheco S.L.</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" href="slider.css" />
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
 		<!--<script type="text/javascript" src="js/prueba.js"></script>-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
@@ -144,7 +144,8 @@
 									<span><?php echo $datos[$i]['ProductoNombre'];?></span><br>
 									<span>Precio: <?php echo $datos[$i]['ProductoPrecio'];?></span><br>
 									<span>Cantidad 
-										<input type="text" value="<?php echo $datos[$i]['ProductoCantidad'];?>"
+										<input type="text" 
+										value="<?php echo $datos[$i]['ProductoCantidad'];?>"
 										data-precio="<?php echo $datos[$i]['ProductoPrecio'];?>"
 										data-id="<?php echo $datos[$i]['ProductoID'];?>"
 										class="cantidad"> 
@@ -159,8 +160,13 @@
 						echo '<center><h3>El carrito de compras está vacío</h3></center>';
 					}
 					echo '<center><h2 id="total">Total : '.$total.'</h2></center>';
+					if($total!=0){
+						echo '<center><a href="./compras/compras.php" class="aceptar">Comprar</a></center>';
+				}
 				?>
 				<center><a href="./basesubcategoria.php">Ver catalogo</a></center>
+
+
 			</div>
 
 			<!-- Footer -->

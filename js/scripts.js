@@ -5,6 +5,7 @@ var inicio=function(){
 				var id=$(this).attr('data-id');
 				var precio=$(this).attr('data-precio');
 				var cantidad=$(this).val();
+				/*No funciona correctamente este parentsUntil hay que localizar qeu falla*/
 				$(this).parentsUntil('.producto').find('.subtotal').text('Subtotal: '+(precio*cantidad));
 				$.post('js/modificarDatos.php',{
 					Id:id,
