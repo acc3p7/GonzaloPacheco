@@ -85,7 +85,7 @@
 							}
 							$pedidoNumeroVenta=$f['pedidoNumeroVenta'];
 							echo '<tr>
-									<td>'.$f['pedidoNumeroVenta'].'</td>
+									<td>'.$f['pedidoNombre'].'</td>
 									<td>'.$f['pedidoPrecio'].'</td>
 									<td>'.$f['pedidoCantidad'].'</td>
 									<td>'.$f['pedidoSubtotal'].'</td>

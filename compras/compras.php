@@ -10,10 +10,10 @@ include "../conexion.php";
 	if($pedidoNumeroVenta==0){
 		$pedidoNumeroVenta=1;
 	}else{
-		$pedidoNumeroVenta++;
+		$pedidoNumeroVenta=$pedidoNumeroVenta+1;
 	}
 	for($i=0;$i<count($arreglo);$i++){
-		mysql_query("insert into tblpedido (pedidoNumeroVenta,pedidoNombre,pedidoPrecio,pedidoCantidad,pedidoImpuestos,pedidoUsuarioID) values(
+		mysql_query("insert into tblpedido (pedidoNumeroVenta,pedidoNombre,pedidoPrecio,pedidoCantidad,pedidoSubtotal,pedidoUsuarioID) values(
 			".$pedidoNumeroVenta.",
 			'".$arreglo[$i]['ProductoNombre']."',
 			'".$arreglo[$i]['ProductoPrecio']."',
