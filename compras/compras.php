@@ -5,7 +5,7 @@ include "../conexion.php";
 	$pedidoNumeroVenta=0;
 	$re=mysql_query("select * from tblpedido order by pedidoNumeroVenta DESC limit 1") or die(mysql_error());
 	while ($f=mysql_fetch_array(($re))) {
-		$detallePedidoID=$f['pedidoNumeroVenta'];
+		$pedidoNumeroVenta=$f['pedidoNumeroVenta'];
 	}
 	if($pedidoNumeroVenta==0){
 		$pedidoNumeroVenta=1;
