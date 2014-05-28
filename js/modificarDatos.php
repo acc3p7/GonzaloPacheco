@@ -11,7 +11,7 @@ session_start();
 	}
 	$arreglo[$numero]['ProductoCantidad']=$_POST['Cantidad'];
 		for ($i=0; $i<count($arreglo); $i++) { 
-				$total=($arreglo[$i]['ProductoPrecio']*$arrego[$i]['Cantidad'])+$total;
+				$total=($arreglo[$i]['ProductoPrecio']*$arrego[$i]['ProductoCantidad'])+$total;
 		}
 	$_SESSION['carrito']=$arreglo;
 	echo $total;
