@@ -1,12 +1,3 @@
-<?php
-	session_start();
-	include "conexion.php";
-	if(isset($_SESSION['Usuario'])){
-
-	}else{
-		header("Location: ./index.php?Error=Acceso denegado");
-	}
-?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -26,7 +17,12 @@
 	<div id="header">
 			<div id="cabecera">
 			<div class="menuacc">
-				<?php include "includes/menuAdmin.php"; ?>
+				<ul>
+					<li><a href="#" title="Inicio">Inicio</a></li>
+					<li><a href="#" title="Contacto">Contacto</a></li>
+					<li><a href="#" title="Mapa web">Mapa web</a></li>
+					<li><a href="#" title="Accesibilidad">Accesibilidad</a></li>
+				</ul>
 			</div>
 			
 			<div class="menuid">
@@ -44,12 +40,14 @@
 		</div>
 		<!-- Menu dinámico para todas las páginas -->
 		<div id="menu">
-			<?php include "includes/menuAdmin.php"; ?>
+			<?php include "includes/menu.php"; ?>
 		</div>
 	</div>
 
 	<div id="contenedor">
-		<div id="contenido">		
+		<div id="contenido">
+
+		
 						
 			<!-- Contenido -->
 
@@ -66,34 +64,7 @@
 
 			<!-- Contenido en la parte izquierda -->
 			<div id="contproductos">
-				<!-- Título del producto -->
-				<h2>Ultimas compras</h2>
-				<p></p>
-				<table border="1px" width="100%" >
-					<tr>
-						<td>Nombre</td>
-						<td>Precio</td>
-						<td>Cantidad</td>
-						<td>Subtotal</td>
-					</tr>
-
-					<?php
-						$re=mysql_query("select * from tblpedido");
-						$pedidoNumeroVenta=0;
-						while ($f=mysql_fetch_array($re)) {
-							if($pedidoNumeroVenta!=$f['pedidoNumeroVenta']){
-								echo '<tr><td>Compra Número: '.$f['pedidoNumeroVenta'].' </td></tr>';
-							}
-							$pedidoNumeroVenta=$f['pedidoNumeroVenta'];
-							echo '<tr>
-									<td>'.$f['pedidoNombre'].'</td>
-									<td>'.$f['pedidoPrecio'].'</td>
-									<td>'.$f['pedidoCantidad'].'</td>
-									<td>'.$f['pedidoSubtotal'].'</td>
-							</tr>';
-						}
-					?>
-				</table>
+				<?php include "admin/agregarproducto.php"; ?>
 			</div>
 			
 

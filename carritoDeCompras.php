@@ -83,10 +83,7 @@
 			<div id="cabecera">
 			<div class="menuacc">
 				<ul>
-					<li><a href="#" title="Inicio">Inicio</a></li>
-					<li><a href="#" title="Contacto">Contacto</a></li>
-					<li><a href="#" title="Mapa web">Mapa web</a></li>
-					<li><a href="#" title="Accesibilidad">Accesibilidad</a></li>
+					<?php include "includes/menuTop.php"; ?>
 				</ul>
 			</div>
 			
@@ -151,6 +148,7 @@
 										class="cantidad"> 
 									</span><br>
 									<span class="subtotal">Subtotal: <?php echo $datos[$i]['ProductoPrecio']*$datos[$i]['ProductoCantidad'];?></span><br>
+									<a href="#" class="eliminar" data-id="<?php echo $datos[$i]['ProductoID']?>">Eliminar</a>
 								</center>
 							</div>
 				<?php
